@@ -9,7 +9,7 @@ import Colors from './../../constants/Colors'
 export default function TabLayout() {
   return (
     <Tabs screenOptions={{
-        tabBarActiveTintColor:Colors.PRIMARY
+        tabBarActiveTintColor:Colors.PRIMARY,
         }} >
       <Tabs.Screen
         name="home"

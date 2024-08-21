@@ -2,7 +2,6 @@ import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import { ClerkProvider, ClerkLoaded } from "@clerk/clerk-expo";
 import * as SecureStore from 'expo-secure-store'
-import { Slot } from "expo-router";
 
 const tokenCache = {
   async getToken(key) {
@@ -31,7 +30,7 @@ const tokenCache = {
 
 
 //env file key should be use to remove the key Warning 
-const publishableKey = 'pk_test_bmVlZGVkLWZlcnJldC0xNy5jbGVyay5hY2NvdW50cy5kZXYk';
+const publishableKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
 if (!publishableKey) {
   throw new Error(
