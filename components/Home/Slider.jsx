@@ -21,7 +21,7 @@ export default function Slider(){
         }} >
             <FlatList data={sliderList}
             horizontal={true}
-            showsVerticalScrollIndicator={false}
+            showsHorizontalScrollIndicator={false}
             renderItem={({item,index})=>(
                 <View>
                     <Image source={{uri:item?.imageUrl}} style={styles?.sliderImage}/>

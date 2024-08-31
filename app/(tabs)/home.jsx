@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { View ,Text,StyleSheet, TouchableOpacity } from "react-native"
 import Header from "../../components/Home/Header"
 import Slider from "../../components/Home/Slider"
@@ -12,7 +12,8 @@ export default function Home(){
 
     <View style={{
         padding:20,
-        marginTop:20
+        marginTop:20,
+        backgroundColor:Colors.BACKGROUND
     }}>
     {/* //    home */}
     <Header/>

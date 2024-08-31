@@ -4,4 +4,8 @@ export default{
   WHITE:'#fff',
   SECONDARY:'#4faaff',
   LIGHT_PRIMARY:'#fff1c9',
+ BACKGROUND:'#D1BB9E',
+ FONT_COLOR:'#000000',
+ CATGORY_ICON:'#DC6D19',
+ COLOR_SELECTED:'#E72929'
 }

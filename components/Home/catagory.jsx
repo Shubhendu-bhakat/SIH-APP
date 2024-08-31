@@ -26,11 +26,13 @@ const [selectedCatagory,setSelectedCatagory] = useState("bird");
             <Text style={{
                 fontFamily:'outfit-medium',
                 fontSize:20,
+                color:Colors.FONT_COLOR
             }} >Catagory </Text>
 
             <FlatList 
             data={CatagoryList}
-            numColumns={4}
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
             renderItem={({item,index})=>(
                 <TouchableOpacity 
                 onPress={()=>{
@@ -38,7 +40,7 @@ const [selectedCatagory,setSelectedCatagory] = useState("bird");
                     catagory(item.name);
                 }}
                 style={{
-                    flex:1
+                    flex:1,
                 }}>
                     <View style={[styles.container,
                         selectedCatagory==item.name && styles.selectedCatagoryCont
@@ -66,12 +68,12 @@ const styles = StyleSheet.create({
     alignItems:'center',
     borderWidth:1,
     borderRadius:15,
-    borderColor:Colors.PRIMARY,
+    borderColor:'#000',
     margin:5,
 
   },
   selectedCatagoryCont :{
-    backgroundColor:Colors.SECONDARY,
+    backgroundColor:Colors.COLOR_SELECTED,
     borderColor:Colors.SECONDARY,
   }
 })
