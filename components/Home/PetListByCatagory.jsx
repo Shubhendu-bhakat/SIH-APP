@@ -13,7 +13,6 @@ export default function PetListByCatagory() {
   },[])
   //fetching the data from firebase using querries
 
-
   const GetPetList = async (catagory) => {
     setLoader(true);
     setPetList([]);

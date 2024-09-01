@@ -5,6 +5,7 @@ import Slider from "../../components/Home/Slider"
 import PetListByCatagory from "../../components/Home/PetListByCatagory"
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import Colors from "../../constants/Colors"
+import Search from "../../components/Home/search"
 
 
 export default function Home(){
@@ -13,11 +14,17 @@ export default function Home(){
     <View style={{
         padding:20,
         marginTop:20,
-        backgroundColor:Colors.BACKGROUND
+        backgroundColor:'#121C24'
     }}>
     {/* //    home */}
     <Header/>
+
+    {/* srarch bar and icon */}
+
+    <Search/>
+
     {/* slider */}
+
     <Slider/>
 
     {/* pet list by catagory */}

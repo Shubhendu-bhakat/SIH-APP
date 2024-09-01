@@ -26,7 +26,7 @@ const [selectedCatagory,setSelectedCatagory] = useState("bird");
             <Text style={{
                 fontFamily:'outfit-medium',
                 fontSize:20,
-                color:Colors.FONT_COLOR
+                color:'#fff'
             }} >Catagory </Text>
 
             <FlatList 
@@ -52,7 +52,8 @@ const [selectedCatagory,setSelectedCatagory] = useState("bird");
                     </View>
                  <Text style={{
                     textAlign:"center",
-                    fontFamily:'outfit'
+                    fontFamily:'outfit',
+                    color:'#fff'
                  }}>{item?.name}</Text>   
                 </TouchableOpacity>
             )}

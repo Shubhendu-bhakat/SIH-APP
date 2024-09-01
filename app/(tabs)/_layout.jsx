@@ -21,25 +21,15 @@ export default function TabLayout() {
           ),
         }}
       />
-      <Tabs.Screen
-        name="favroite"
-        options={{
-          title: "Favourite",
-          headerShown: false,
-          tabBarIcon: ({ color }) => (
-            <Ionicons name="heart" size={24} color={color} />
-          ),
-        }}
-      />
       <Tabs.Screen name="inbox" options={{
         title:"Inbox",
         headerShown:false,
         tabBarIcon:({color})=><Octicons name="inbox" size={24} color={color} />
       }}/>
       <Tabs.Screen name="profile" options={{
-        title:"Profile",
-        headerShown:false,
-        tabBarIcon:({color})=><Octicons name="people" size={24} color={color} />
+        title: "Profile",
+        headerShown: false,
+        tabBarIcon: ({ color }) => <Octicons name="people" size={24} color={color} />
       }} />
     </Tabs>
   );

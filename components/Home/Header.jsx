@@ -11,12 +11,14 @@ export default function Header() {
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
+        marginBottom:10,
       }}
     >
       <Text
         style={{
           fontFamily: "outfit",
           fontSize: 18,
+          color:'#F7FAFA'
         }}
       >
         Welcome
@@ -25,13 +27,15 @@ export default function Header() {
         style={{
           fontFamily: "outfit-medium",
           fontSize: 9,
+          color:'#F7FAFA'
         }}
       >
         {user?.fullName}
       </Text>
       <Image
         source={{ uri: user?.imageUrl }}
-        style={{ width: 40, height: 44, borderRadius: 99 }}
+        style={{ width: 40, height: 44, borderRadius: 99 ,padding:20}}
+        
       />
     </View>
   );
