@@ -21,7 +21,7 @@ export default function PetListItem({ pet }) {
       <Image
         source={{ uri: pet?.imageUrl }}
         style={{
-          width: 150,
+          width: '100%',
           height: 135,
           objectFit: "cover",
           borderRadius: 10,
@@ -41,6 +41,7 @@ export default function PetListItem({ pet }) {
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
+          padding:20
         }}
       >
         <Text
@@ -60,9 +61,17 @@ export default function PetListItem({ pet }) {
             backgroundColor: Colors.LIGHT_PRIMARY,
           }}
         >
-          {pet.age} YRS
+          {pet.age}
         </Text>
       </View>
+      <View style={{
+        height:10,
+        backgroundColor:'#000',
+        width:'100%'
+      }}>
+
+      </View>
+     
     </TouchableOpacity>
   );
 }

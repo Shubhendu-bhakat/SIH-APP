@@ -24,7 +24,7 @@ export default function Profile(){
             id:3,
             name:'exit',
             icon:'logout',
-            path:'/login/index'
+            path:'logout'
         }
     ]
     const {user} = useUser();

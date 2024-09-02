@@ -28,12 +28,12 @@ export default function PetListByCatagory() {
       <Catagory catagory={(value) => GetPetList(value)} />
         <FlatList 
         style={{
-            marginTop:10
+            marginTop:10,
+            padding:10
         }}
         refreshing={loader}
         onRefresh={()=>{GetPetList('bird')}}
         data={petList}
-        horizontal={true}
         renderItem={({item,index})=>(
             <PetListItem pet={item} />
         )}/>

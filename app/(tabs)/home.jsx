@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { View ,Text,StyleSheet, TouchableOpacity } from "react-native"
+import { View ,Text,StyleSheet, TouchableOpacity, ScrollView } from "react-native"
 import Header from "../../components/Home/Header"
 import Slider from "../../components/Home/Slider"
 import PetListByCatagory from "../../components/Home/PetListByCatagory"
@@ -11,7 +11,7 @@ import Search from "../../components/Home/search"
 export default function Home(){
     return(
 
-    <View style={{
+    <ScrollView style={{
         padding:20,
         marginTop:20,
         backgroundColor:'#121C24'
@@ -28,16 +28,9 @@ export default function Home(){
     <Slider/>
 
     {/* pet list by catagory */}
-    <PetListByCatagory/>
+    <PetListByCatagory />
 
-    {/* add new pet */}
-
-    <TouchableOpacity style={styles.addnewPetCont}>
-    <MaterialIcons name="pets" size={24} color="black" />
-    <Text style={styles.addPetText}>Add New pet</Text>
-    </TouchableOpacity>
-
-    </View>
+    </ScrollView>
     )
 }
 

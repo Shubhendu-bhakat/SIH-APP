@@ -1,6 +1,7 @@
 import { useUser } from "@clerk/clerk-expo";
 import React from "react";
 import { View, Text, Image } from "react-native";
+import Colors from "../../constants/Colors";
 
 export default function Header() {
   const { user } = useUser();
@@ -12,6 +13,7 @@ export default function Header() {
         justifyContent: "space-between",
         alignItems: "center",
         marginBottom:10,
+        
       }}
     >
       <Text
