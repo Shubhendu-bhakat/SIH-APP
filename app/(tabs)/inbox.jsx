@@ -64,7 +64,7 @@ const GeminiChat = () => {
     const text = response.text();
     setMessages([...messages, { text, user: false }]);
     setLoading(false);
-    setUserInput("");
+    setUserInput(" ");
 
     // if (text) {
     //   Speech.speak(text);
@@ -88,7 +88,7 @@ const GeminiChat = () => {
   };
 
   const ClearMessage = () => {
-    setMessages("");
+    setMessages(" ");
     setIsSpeaking(false);
   };
 
